@@ -27,7 +27,6 @@ int main(void) {
 	int64_t s = getNowUs();
 	for (int i = 0; i < 10000; ++i) {
 		m.runAStar(Node(0, 0), Node(5, 0), path);
-		path.clear();
 	}
 	int64_t e = getNowUs();
 	printf("time %ld\n", e - s);

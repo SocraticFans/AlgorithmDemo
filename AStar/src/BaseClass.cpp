@@ -57,6 +57,7 @@ void Map::getNeighbours(Node* node, vector<Node*>& neighbours) {
 }
 
 bool Map::runAStar(const Node& from, const Node& to, list<Node*>& path) {
+	path.clear();
 	OpenTable openList;
 	Node* fromNode = getNode(from);
 	Node* targetNode = getNode(to);
