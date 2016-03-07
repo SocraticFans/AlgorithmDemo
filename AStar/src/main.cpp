@@ -12,7 +12,7 @@ static int mapData[][6] = { {0, 0, 0, 1, 0, 0},
 							{0, 0, 0, 1, 0, 0},
 							{0, 0, 0, 1, 0, 0},
 						};
-const uint32_t MICROSEC_PER_SEC     = 1000000;
+const uint32_t MICROSEC_PER_SEC = 1000000;
 int64_t getNowUs() {
 	struct timeval tv;
 	gettimeofday(&tv, NULL);
